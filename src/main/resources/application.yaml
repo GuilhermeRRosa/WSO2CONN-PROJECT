@@ -1,0 +1,19 @@
+spring:
+  security:
+    oauth2:
+      client:
+        registration:
+          wso2:
+            client-id: gTZbfnKGBtFDWv9B4Ik9DjiNfaEa
+            client-secret: BTFIrUoRGFKsSfmnpOVfGjIZcm4DQ3qDThO_QjU5hQ8a
+            authorization-grant-type: authorization_code
+            redirect-uri: http://localhost:8080/login/oauth2/code/wso2
+            scope: openid
+        provider:
+          wso2:
+            authorization-uri: https://api.asgardeo.io/t/orggg/oauth2/authorize
+            token-uri: https://api.asgardeo.io/t/orggg/oauth2/token
+            user-info-uri: https://api.asgardeo.io/t/orggg/oauth2/userinfo
+            user-name-attribute: sub
+            jwk-set-uri: https://api.asgardeo.io/t/orggg/oauth2/jwks
+#            issuer_uri: https://api.asgardeo.io/t/orggg/oauth2/token/.well-known/openid-configuration
