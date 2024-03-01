@@ -8,7 +8,7 @@ spring:
             client-secret: BTFIrUoRGFKsSfmnpOVfGjIZcm4DQ3qDThO_QjU5hQ8a
             authorization-grant-type: authorization_code
             redirect-uri: http://localhost:8080/login/oauth2/code/wso2
-            scope: openid
+            scope: openid,profile,email
         provider:
           wso2:
             authorization-uri: https://api.asgardeo.io/t/orggg/oauth2/authorize
